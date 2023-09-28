@@ -144,9 +144,31 @@ Data: 13/05  |Nfe entrada: 10   |Movimentação: +10  |Saldo: 15<br />
 Data: 14/05  |Contagem: 13      |Movimentação: -2   |Saldo: 13<br />
 Saldo final: 13<br /></p>
 <p>Agora vamos supor que do dia 10/05 até 14/05 havia uma nota de entrada que não foi lançada, e ela vai ser lançada após a efetivação do estoque no dia 14/05, o saldo ficaria assim:<br /></p>
-<p>Data: 10/05   Saldo inicial: 10 <br />
-Data: 11/05   |Venda: 05        |Movimentação: -5  |Saldo: 05<br />
-<strong>Data: 12/05 |Nfe entrada: 05  |Movimentação: +5  |Saldo: 10</strong><br />
+<table>
+<thead>
+<tr>
+<th>Data</th>
+<th>Tipo</th>
+<th>Movimentação</th>
+<th>Saldo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10/05</td>
+<td></td>
+<td></td>
+<td>10</td>
+</tr>
+<tr>
+<td>11/05</td>
+<td>Venda: 05</td>
+<td>-5</td>
+<td>05</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Data: 12/05 |Nfe entrada: 05  |Movimentação: +5  |Saldo: 10</strong><br />
 Data: 13/05   |Nfe entrada: 10  |Movimentação: +20 |Saldo: 15<br />
 Data: 14/05   |Contagem: 13     |Movimentação: -2  |Saldo: 18<br />
 Saldo final: 18<br /></p>
