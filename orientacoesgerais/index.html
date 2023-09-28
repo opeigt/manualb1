@@ -55,6 +55,10 @@
         </ul>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#funcionamento-do-sistema">Funcionamento do sistema</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#giro-de-estoque">Giro de estoque:</a>
+    </li>
+        </ul>
     </li>
     </ul>
                 </li>
@@ -132,18 +136,61 @@ Atualizamos a planilha a cada 2 dias <br />
 Mesmo depois de colocar na planilha que a nota foi enviada, confira se na planilha não consta como reprovada</p>
 <p><a href="https://gifyu.com/image/S4AB2"><img src="https://s6.gifyu.com/images/S4AB2.png" alt="planilhadenotas" border="0" /></a></p>
 <h2 id="funcionamento-do-sistema">Funcionamento do sistema</h2>
-<p><strong>Giro de estoque:</strong>
-Como funciona as movimentações no sistema?<br />
+<h3 id="giro-de-estoque">Giro de estoque:</h3>
+<p>Como funciona as movimentações no sistema?<br />
 O conceito central do sistema é que ele não faz novos ajustes com base nas movimentações.
 Mas o que isso significa?<br />
 Toda vez que você faz um novo lançamento no estoque, seja ele por nota fiscal, ajuste de estoque, perdas ou venda, ele dá uma entrada ou saída no saldo de estoque atual e registra um valor de movimentação, positivo ou negativo.<br />
 Exemplificando fica assim:<br /></p>
-<p>Data: 10/05  |Saldo inicial: 10 <br />
-Data: 11/05  |Venda: 05         |Movimentação: -5   |Saldo: 05<br />
-Data: 13/05  |Nfe entrada: 10   |Movimentação: +10  |Saldo: 15<br />
-Data: 14/05  |Contagem: 13      |Movimentação: -2   |Saldo: 13<br />
-Saldo final: 13<br /></p>
-<p>Agora vamos supor que do dia 10/05 até 14/05 havia uma nota de entrada que não foi lançada, e ela vai ser lançada após a efetivação do estoque no dia 14/05, o saldo ficaria assim:<br /></p>
+<table>
+<thead>
+<tr>
+<th>Data</th>
+<th>Tipo</th>
+<th>Quantidade</th>
+<th>Movimentação</th>
+<th>Saldo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10/05</td>
+<td>Saldo inicial</td>
+<td>10</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>11/05</td>
+<td>Venda</td>
+<td>05</td>
+<td>-5</td>
+<td>05<br /></td>
+</tr>
+<tr>
+<td>13/05</td>
+<td>Nfe entrada</td>
+<td>10</td>
+<td>+10</td>
+<td>15<br /></td>
+</tr>
+<tr>
+<td>14/05</td>
+<td>Contagem</td>
+<td>13</td>
+<td>-2</td>
+<td>13<br /></td>
+</tr>
+<tr>
+<td>14/05</td>
+<td>Saldo final</td>
+<td>13<br /></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Vamos considerar uma situação hipotética em que, no período de 10/05 a 14/05, houve uma nota de entrada no dia 12/05 que ainda não foi registrada. Essa nota será lançada após a efetivação do estoque no dia 14/05. Como resultado, o saldo ficaria da seguinte maneira:<br /></p>
 <table>
 <thead>
 <tr>
@@ -170,11 +217,11 @@ Saldo final: 13<br /></p>
 <td>05</td>
 </tr>
 <tr>
-<td>**12/05</td>
+<td>12/05</td>
 <td>Nfe</td>
 <td>05</td>
 <td>+5</td>
-<td>10**</td>
+<td>10</td>
 </tr>
 <tr>
 <td>13/05</td>
