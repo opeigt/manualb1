@@ -132,6 +132,26 @@ Atualizamos a planilha a cada 2 dias <br />
 Mesmo depois de colocar na planilha que a nota foi enviada, confira se na planilha não consta como reprovada</p>
 <p><a href="https://gifyu.com/image/S4AB2"><img src="https://s6.gifyu.com/images/S4AB2.png" alt="planilhadenotas" border="0" /></a></p>
 <h2 id="funcionamento-do-sistema">Funcionamento do sistema</h2>
+<p><strong>Giro de estoque:</strong>
+Como funciona as movimentações no sistema?
+O conceito central do sistema é que ele não faz novos ajustes com base nas movimentações.
+Mas o que isso significa?
+Toda vez que você faz um novo lançamento no estoque, seja ele por nota fiscal, ajuste de estoque, perdas ou venda, ele dá uma entrada ou saída no saldo de estoque atual e registra um valor de movimentação, positivo ou negativo.
+Exemplificando fica assim:
+Data: 10/05 – Saldo inicial: 10 
+Data: 11/05 –  Venda: 05          - Movimentação: -5   –  Saldo: 05
+Data: 13/05 – Nfe entrada: 10 -  Movimentação: +10 – Saldo: 15
+Data: 14/05 – Contagem: 13    – Movimentação: -2 –  Saldo: 13
+Saldo final: 13
+Agora vamos supor que do dia 10/05 até 14/05 havia uma nota de entrada que não foi lançada, e ela vai ser lançada após a efetivação do estoque no dia 14/05, o saldo ficaria assim:
+Data: 10/05 – Saldo inicial: 10 – 
+Data: 11/05 –  Venda: 05           - Movimentação: -5   –  Saldo: 05
+<strong>Data: 12/05 –  Nfe entrada: 05           - Movimentação: +5   –  Saldo: 10</strong>
+Data: 13/05 – Nfe entrada: 10 -  Movimentação: +20 – Saldo: 15
+Data: 14/05 – Contagem: 13 – Movimentação: -2 –  Saldo: 18
+Saldo final: 18</p>
+<p>O saldo final do dia fecharia com 18, diferente da contagem, pois a movimentação -2 do item que foi efetivada é irreversível </p>
+<p>Esse é o motivo no qual não conseguimos efetivar com rapidez as contagens lançadas, para efetivar, requer que a movimentação de antes da contagem já estejam lançadas</p>
               
             </div>
           </div><footer>
