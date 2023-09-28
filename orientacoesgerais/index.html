@@ -56,6 +56,8 @@
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#funcionamento-do-sistema">Funcionamento do sistema</a>
     </li>
+    <li class="toctree-l2"><a class="reference internal" href="#agora-vamos-supor-que-do-dia-1005-ate-1405-havia-uma-nota-de-entrada-que-nao-foi-lancada-e-ela-vai-ser-lancada-apos-a-efetivacao-do-estoque-no-dia-1405-o-saldo-ficaria-assim">Agora vamos supor que do dia 10/05 até 14/05 havia uma nota de entrada que não foi lançada, e ela vai ser lançada após a efetivação do estoque no dia 14/05, o saldo ficaria assim:</a>
+    </li>
     </ul>
                 </li>
               </ul>
@@ -133,25 +135,28 @@ Mesmo depois de colocar na planilha que a nota foi enviada, confira se na planil
 <p><a href="https://gifyu.com/image/S4AB2"><img src="https://s6.gifyu.com/images/S4AB2.png" alt="planilhadenotas" border="0" /></a></p>
 <h2 id="funcionamento-do-sistema">Funcionamento do sistema</h2>
 <p><strong>Giro de estoque:</strong>
-Como funciona as movimentações no sistema?
+Como funciona as movimentações no sistema?<br />
 O conceito central do sistema é que ele não faz novos ajustes com base nas movimentações.
-Mas o que isso significa?
-Toda vez que você faz um novo lançamento no estoque, seja ele por nota fiscal, ajuste de estoque, perdas ou venda, ele dá uma entrada ou saída no saldo de estoque atual e registra um valor de movimentação, positivo ou negativo.
-Exemplificando fica assim:
-Data: 10/05 – Saldo inicial: 10 
-Data: 11/05 –  Venda: 05          - Movimentação: -5   –  Saldo: 05
-Data: 13/05 – Nfe entrada: 10 -  Movimentação: +10 – Saldo: 15
-Data: 14/05 – Contagem: 13    – Movimentação: -2 –  Saldo: 13
-Saldo final: 13
-Agora vamos supor que do dia 10/05 até 14/05 havia uma nota de entrada que não foi lançada, e ela vai ser lançada após a efetivação do estoque no dia 14/05, o saldo ficaria assim:
-Data: 10/05 – Saldo inicial: 10 – 
-Data: 11/05 –  Venda: 05           - Movimentação: -5   –  Saldo: 05
-<strong>Data: 12/05 –  Nfe entrada: 05           - Movimentação: +5   –  Saldo: 10</strong>
-Data: 13/05 – Nfe entrada: 10 -  Movimentação: +20 – Saldo: 15
-Data: 14/05 – Contagem: 13 – Movimentação: -2 –  Saldo: 18
-Saldo final: 18</p>
-<p>O saldo final do dia fecharia com 18, diferente da contagem, pois a movimentação -2 do item que foi efetivada é irreversível </p>
-<p>Esse é o motivo no qual não conseguimos efetivar com rapidez as contagens lançadas, para efetivar, requer que a movimentação de antes da contagem já estejam lançadas</p>
+Mas o que isso significa?<br />
+Toda vez que você faz um novo lançamento no estoque, seja ele por nota fiscal, ajuste de estoque, perdas ou venda, ele dá uma entrada ou saída no saldo de estoque atual e registra um valor de movimentação, positivo ou negativo.<br />
+Exemplificando fica assim:<br /></p>
+<hr />
+<p>Data: 10/05  Saldo inicial: 10 <br />
+Data: 11/05  Venda: 05         Movimentação: -5   Saldo: 05<br />
+Data: 13/05  Nfe entrada: 10   Movimentação: +10  Saldo: 15<br />
+Data: 14/05  Contagem: 13      Movimentação: -2   Saldo: 13<br />
+Saldo final: 13<br /></p>
+<hr />
+<h2 id="agora-vamos-supor-que-do-dia-1005-ate-1405-havia-uma-nota-de-entrada-que-nao-foi-lancada-e-ela-vai-ser-lancada-apos-a-efetivacao-do-estoque-no-dia-1405-o-saldo-ficaria-assim">Agora vamos supor que do dia 10/05 até 14/05 havia uma nota de entrada que não foi lançada, e ela vai ser lançada após a efetivação do estoque no dia 14/05, o saldo ficaria assim:<br /></h2>
+<p>Data: 10/05   Saldo inicial: 10 <br />
+Data: 11/05   Venda: 05        Movimentação: -5  Saldo: 05<br />
+<strong>Data: 12/05 Nfe entrada: 05  Movimentação: +5  Saldo: 10</strong><br />
+Data: 13/05   Nfe entrada: 10  Movimentação: +20 Saldo: 15<br />
+Data: 14/05   Contagem: 13     Movimentação: -2  Saldo: 18<br />
+Saldo final: 18<br /></p>
+<hr />
+<p>O saldo final do dia fecharia com 18, diferente da contagem, pois a movimentação -2 do item que foi efetivada é irreversível <br /></p>
+<p>Esse é o motivo no qual não conseguimos efetivar com rapidez as contagens lançadas, para efetivar, requer que a movimentação de antes da contagem já estejam lançadas<br /></p>
               
             </div>
           </div><footer>
