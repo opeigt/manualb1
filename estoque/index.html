@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../img/favicon.ico" />
-    <title>Inventario - Manual B1Food X IGT</title>
+    <title>Estoque - Manual B1Food X IGT</title>
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Inventario";
-        var mkdocs_page_input_path = "inventario.md";
+        var mkdocs_page_name = "Estoque";
+        var mkdocs_page_input_path = "estoque.md";
         var mkdocs_page_url = null;
       </script>
     
@@ -47,18 +47,20 @@
                 <li class="toctree-l1"><a class="reference internal" href="../Compras/">Compras</a>
                 </li>
               </ul>
-              <ul class="current">
-                <li class="toctree-l1 current"><a class="reference internal current" href="./">Inventario</a>
-    <ul class="current">
-    </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../inventario/">Inventario</a>
                 </li>
               </ul>
               <ul>
                 <li class="toctree-l1"><a class="reference internal" href="../conciliacao/">Conciliação</a>
                 </li>
               </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../estoque/">Estoque</a>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">Estoque</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#apontamento-de-perdas">Apontamento de perdas</a>
+    </li>
+    </ul>
                 </li>
               </ul>
               <ul>
@@ -79,7 +81,7 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
-      <li class="breadcrumb-item active">Inventario</li>
+      <li class="breadcrumb-item active">Estoque</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -88,33 +90,21 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="inventario">Inventario</h1>
-<p><em>Lançamento por CSV</em></p>
-<p><strong><em>Menu: Inventario -&gt; Novo -&gt; Inventario por CSV</em></strong></p>
-<p><a href="https://gifyu.com/image/S45cT"><img src="https://s6.gifyu.com/images/S45cT.gif" alt="inventarionovo" border="0" /></a></p>
-<p>Fazer download template CSV<br />
-Abrir a planilha que foi feita o download <em>(Vamos chamar ela de template)</em> e salvar em um local do computador que você vai achar depois<br /></p>
-<p>Abrir a planilha da contagem <em>(Disponibilizada por operações na pasta online)</em> e copiar todos os codigos dos itens e colar na planilha coluna "CodigoProdutos" na planilha template, depois copiar as quantidades da planilha de contagem e colar na coluna "quantidade" do template</p>
-<p><a href="https://gifyu.com/image/S4568"><img src="https://s6.gifyu.com/images/S4568.gif" alt="planilhadeinventario (1)" border="0" /></a></p>
-<p>Salvar a planilha template</p>
-<p><em>Vamos voltar para o B1 Food</em></p>
-<p>Depois de fazer esse caminho: Menu: Inventario -&gt; Novo -&gt; Inventario por CSV<br />
-Vá em "Escolher arquivo" e selecione a planilha template<br />
-Depois clique em "contagem"<br /></p>
-<p><a href="https://gifyu.com/image/S458V"><img src="https://s6.gifyu.com/images/S458V.gif" alt="adicionarinventariocsv (1)" border="0" /></a></p>
-<p>Espere até que todos os dados sejam carregados, como nome do item, quantidade e unidade de medida</p>
-<p><strong>Informações do depósito:</strong> Não precisa alterar</p>
-<p><strong>Dados finais da contagem:</strong> Colocar a data que foi feita a contagem, o horario é opcional.</p>
-<p><strong>Observações:</strong> Não precisa preencher</p>
-<p>Agora é só salvar</p>
-<p>Você vai voltar para o painel de visualização dos inventarios<br /></p>
-<p><strong>Aprove e envie a contagem</strong></p>
+                <h1 id="estoque">Estoque</h1>
+<h3 id="apontamento-de-perdas">Apontamento de perdas</h3>
+<p><strong><em>Menu: Estoque -&gt; Apontamento de perdas -&gt; Novo -&gt; Novo apontamento</em></strong></p>
+<p><a href="https://gifyu.com/image/S4o39"><img src="https://s6.gifyu.com/images/S4o39.gif" alt="Novaperda" border="0" /></a></p>
+<p><strong>Data do documento:</strong> Data que aconteceu a perda
+<strong>Motivo de apontamento de perda:</strong> Justificativa da perda</p>
+<p>Adicionar os itens clicando no botão verde com simbolo +</p>
+<p><strong>IMPORTANTE:</strong> só é possivel apontar perdas dos itens que possuem em estoque, então aconselhamos utilizar a lista de contagem como guia, pois apenas esses itens tem quantidade em estoque.</p>
+<p><strong>Salve o apontamento</strong></p>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../Compras/" class="btn btn-neutral float-left" title="Compras"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../conciliacao/" class="btn btn-neutral float-right" title="Conciliação">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../conciliacao/" class="btn btn-neutral float-left" title="Conciliação"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../documentosfiscais/" class="btn btn-neutral float-right" title="Documentos fiscais">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -137,10 +127,10 @@ Depois clique em "contagem"<br /></p>
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../Compras/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../conciliacao/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../conciliacao/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../documentosfiscais/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>
