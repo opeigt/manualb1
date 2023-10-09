@@ -58,6 +58,8 @@
         <ul>
     <li class="toctree-l3"><a class="reference internal" href="#giro-de-estoque">Giro de estoque</a>
     </li>
+    <li class="toctree-l3"><a class="reference internal" href="#transferencias-e-venda-entre-empresas-igt">Transferencias e venda entre empresas IGT</a>
+    </li>
         </ul>
     </li>
     </ul>
@@ -261,6 +263,15 @@ Para ilustrar isso, considere o seguinte exemplo:<br /></p>
 <p>O saldo final do dia fecharia com 18, diferente da contagem, pois a movimentação -2 do item que foi efetivada é irreversível <br /></p>
 <p>Esse é o motivo no qual não conseguimos efetivar com rapidez as contagens lançadas, para efetivar, requer que a movimentação de antes da contagem já estejam lançadas<br /></p>
 <p>O sistema só autoriza uma contagem por vez ficar pendente para efetivação, então antes de fechar o periodo, não é possivel lançar novas contagens</p>
+<h3 id="transferencias-e-venda-entre-empresas-igt">Transferencias e venda entre empresas IGT</h3>
+<p>Vamos bater um papo sobre transferências, porque aqui na IGT, estamos inovando a forma como fazemos as coisas. Com o passar do tempo, algumas dúvidas surgiram, mas calma, a gente descomplica tudo!<br /></p>
+<p>Primeiro, vamos dar uma olhada na teoria, de um jeito bem simples de entender. Mesmo que nossas lojas fiquem lado a lado, tenham o mesmo gerente e até compartilhem estoques, se tiverem CNPJs diferentes, são empresas totalmente separadas. É como aqueles irmãos que dividem o quarto, mas são indivíduos únicos, né?<br /></p>
+<p>A Receita Federal é a nossa "amiga" que olha para essas empresas como se fossem duas, cada uma com suas próprias responsabilidades. Agora, por que estamos falando disso? Porque não é só um probleminha, é um PROBLEMÃO se pegarmos uma mercadoria comprada por um CNPJ e a vendermos por outro. E quem está de olho nisso? O Leão, claro!<br /></p>
+<p>Então, você deve estar se perguntando como resolver essa situação, certo? A solução é simples: formalizar a transação entre as empresas com uma nota fiscal. E, nesse caso, temos dois tipos de nota fiscal:<br /></p>
+<p>Transferência: Quando a transação ocorre entre empresas com a mesma razão social. (Utilização: S Transferencia)<br />
+Venda: Quando a transação envolve empresas com razões sociais diferentes. (Utilização: S Venda)<br />
+Ambas as notas são geradas no mesmo local do sistema<br /></p>
+<p>Após emitir a nota de saída, ela é processada pela matriz. Depois disso, a nota fiscal aparece como entrada na empresa que recebe a mercadoria (Siga as mesmas utilizações de notas de entrada, normalmente). É crucial lançar essa entrada corretamente e verificar se todas as saídas foram devidamente registradas. Com isso, fica tudo tranquilo e a gente evita os olhares curiosos do Leão!<br /></p>
               
             </div>
           </div><footer>
