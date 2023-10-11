@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../img/favicon.ico" />
-    <title>Contatos - Manual B1Food - IGT</title>
+    <title>CMV - Manual B1Food - IGT</title>
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Contatos";
-        var mkdocs_page_input_path = "Contatos.md";
+        var mkdocs_page_name = "CMV";
+        var mkdocs_page_input_path = "CMV.md";
         var mkdocs_page_url = null;
       </script>
     
@@ -75,8 +75,8 @@
                 <li class="toctree-l1"><a class="reference internal" href="../ajuda/">Ajuda</a>
                 </li>
               </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../CMV/">CMV</a>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">CMV</a>
                 </li>
               </ul>
       </div>
@@ -93,7 +93,7 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
-      <li class="breadcrumb-item active">Contatos</li>
+      <li class="breadcrumb-item active">CMV</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -102,10 +102,27 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                
+                <p>Com as novas dinâmicas de trabalho, calcular o CMV (Custo de Mercadoria Vendida) tem sido um verdadeiro quebra-cabeça para nós. É por isso que estamos explorando alternativas para fornecer esses dados a vocês de maneira rápida e eficaz, para que possam analisar a situação atual e identificar possíveis erros nas transações.<br /></p>
+<p>Vamos dar uma olhada no nosso relatório de CMV e desvendar seus segredos:<br /></p>
+<p><a href="https://gifyu.com/image/S6nXI"><img src="https://s6.gifyu.com/images/S6nXI.gif" alt="telainicial cmv" border="0" /></a></p>
+<p>Vamos chamar essas divisões de guias:</p>
+<p><a href="https://gifyu.com/image/S6nXu"><img src="https://s6.gifyu.com/images/S6nXu.gif" alt="guias cmv" border="0" /></a></p>
+<p>Período de CMV: Sempre abrange as datas que incluem contagens de estoque.<br /></p>
+<p>Agora, sobre o cálculo do CMV:<br /></p>
+<p><strong>CMV = (((Transferências + Compras) - (Estoque Final - Estoque Inicial)) / Faturamento)</strong><br /></p>
+<p>Aqui está o que cada parte desse cálculo significa:<br /></p>
+<p><strong>Faturamento:</strong> Um valor inalterável na planilha que representa o valor total faturado no período especificado.<br /></p>
+<p><strong>Estoque Inicial:</strong> Outro valor inalterável que representa o saldo no início do período em questão.<br /></p>
+<p><strong>Transferências:</strong> Os valores disponíveis na guia "NF de Saída" incluem todas as notas de saída solicitadas no B1, mas na planilha, consideramos apenas as notas referentes ao período especificado.<br /></p>
+<p><strong>Compras:</strong> Os valores da guia "Compras" incluem todas as notas de compra daquele CNPJ, mas para o cálculo de compra na planilha, somamos apenas os valores das notas que atendem a critérios específicos. Elas devem ter status "finalizado," indicar que compõem o CMV, e sua data de entrada no estoque deve estar dentro do período em análise. Você pode editar a informação de "compõe" para "Sim" ou "Não" conforme necessário, e também é possível editar a data de entrada no estoque.<br /></p>
+<p><strong>Estoque Final:</strong> A contagem disponível na guia "Estoque" representa a última contagem no período especificado. A única informação que não pode ser editada são os campos de preço e total; o restante pode ser ajustado, se necessário.
+Chamamos cada uma dessas partes da planilha de "guias," e cada guia representa um elemento chave no cálculo do CMV. Com essa explicação, esperamos que tudo fique mais claro e que você possa desvendar os mistérios por trás dos números. </p>
               
             </div>
           </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../ajuda/" class="btn btn-neutral float-left" title="Ajuda"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+    </div>
 
   <hr/>
 
@@ -126,6 +143,8 @@
   <div class="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     
+    
+      <span><a href="../ajuda/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
   </span>
