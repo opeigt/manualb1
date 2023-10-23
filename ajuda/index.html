@@ -76,15 +76,23 @@
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#contatos">Contatos</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#erros-recorrentes">Erros recorrentes</a>
+    <li class="toctree-l2"><a class="reference internal" href="#inventario">Inventario</a>
         <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#inventario-nome-dos-produtos-e-unidades-de-medidas-nao-carregam">Inventario - Nome dos produtos e unidades de medidas não carregam</a>
+    <li class="toctree-l3"><a class="reference internal" href="#nome-dos-produtos-e-unidades-de-medidas-nao-carregam">Nome dos produtos e unidades de medidas não carregam</a>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#df-sem-forma-de-pagamento">DF - Sem forma de pagamento</a>
+        </ul>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#df-erro-ao-integrar-com-o-sap">DF - Erro ao integrar com o SAP</a>
+    <li class="toctree-l2"><a class="reference internal" href="#documentos-fiscais">Documentos fiscais</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#sem-forma-de-pagamento">Sem forma de pagamento</a>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#conc-dia-nao-disponivel-para-conciliacao">CONC - Dia não disponivel para conciliação</a>
+    <li class="toctree-l3"><a class="reference internal" href="#erro-ao-integrar-com-o-sap">Erro ao integrar com o SAP</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#conciliacao">Conciliação</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#dia-nao-disponivel-para-conciliacao">Dia não disponivel para conciliação</a>
     </li>
         </ul>
     </li>
@@ -121,8 +129,8 @@
                 <h1 id="ajuda">Ajuda</h1>
 <h3 id="contatos">Contatos</h3>
 <p><img src="https://buri.org.br/imagens/pagina_em.png" jsaction="VQAsE" class="r48jcc pT0Scc iPVvYb" style="max-width: 500px; height: 373px; margin: 0px; width: 377px;" alt="Página em Construção" jsname="kn3ccd" aria-hidden="false"></p>
-<h2 id="erros-recorrentes">Erros recorrentes</h2>
-<h3 id="inventario-nome-dos-produtos-e-unidades-de-medidas-nao-carregam">Inventario - Nome dos produtos e unidades de medidas não carregam</h3>
+<h2 id="inventario">Inventario</h2>
+<h3 id="nome-dos-produtos-e-unidades-de-medidas-nao-carregam">Nome dos produtos e unidades de medidas não carregam</h3>
 <p><a href="https://gifyu.com/image/S4Afh"><img src="https://s6.gifyu.com/images/S4Afh.jpg" alt="não carrega" border="0" /></a></p>
 <p>Isso ocorre, pois, o sistema requer muitos dados de internet para carregar a planilha quando há produtos com quantidades zeradas na planilha, dependendo da velocidade da internet em que você está conectado, esse erro pode ser recorrente</p>
 <p>Para resolver isso, você precisa excluir da planilha template, todos os itens com quantidade zerada, mas calma que isso é mais simples do que você pensa</p>
@@ -141,7 +149,8 @@
 <p><a href="https://gifyu.com/image/S4AZD"><img src="https://s6.gifyu.com/images/S4AZD.gif" alt="selecionartudo (1)" border="0" /></a></p>
 <p><strong>Pronto!!</strong> Já pode importar a planilha no sistema</p>
 <p>Se isso não funcionar, verique se não há virgula nas quantidades</p>
-<h3 id="df-sem-forma-de-pagamento">DF - Sem forma de pagamento</h3>
+<h2 id="documentos-fiscais">Documentos fiscais</h2>
+<h3 id="sem-forma-de-pagamento">Sem forma de pagamento</h3>
 <p>Antes de tudo, é necessario verificar se foi feito a associação do fornecedor com a nota. </p>
 <p>Se estiver nessse padrão: <br />
 Nome do fornecedor (Cidade do fornecedor)<br />
@@ -153,13 +162,14 @@ Nome do fornecedor - cnpj <br />
 Sem associação<br /></p>
 <p>Caso não tenha sido feita, siga os passos encontrados na seção: "Documentos fiscais -&gt; Notas fiscais de entrada - Mercadoria" deste documento</p>
 <p>Se mesmo depois de fazer a associação, a forma de pagamento necessária não surgir, entre em contato com depto. operações</p>
-<h3 id="df-erro-ao-integrar-com-o-sap">DF - Erro ao integrar com o SAP</h3>
+<h3 id="erro-ao-integrar-com-o-sap">Erro ao integrar com o SAP</h3>
 <p><strong>-5002 - Valor inválido [PCH1.BaseLine][line: 1] [Mensagem 439-173]</strong><br /></p>
 <p>Essa mensagem significa que foi associado o mesmo item do pedido em mais de uma nota<br /></p>
 <p>[PCH1.BaseLine] -&gt; Sempre que surgir "BaseLine" é erro com arquivo base, no caso das notas de entradas são os pedidos<br />
 [line: 1] -&gt; Line é a linha do item que foi associado mais de uma vez, nesse caso seria o produto 1 da nota<br /></p>
 <p>Esse erro é resolvido, reiniciando a nota (Esse processo precisa ser pedido para operações) e fazendo o lançamento novamente da nota.<br /></p>
-<h3 id="conc-dia-nao-disponivel-para-conciliacao">CONC - Dia não disponivel para conciliação</h3>
+<h2 id="conciliacao">Conciliação</h2>
+<h3 id="dia-nao-disponivel-para-conciliacao">Dia não disponivel para conciliação</h3>
 <p><strong><em>Menu: Conciliação -&gt; Realizar conciliação</em></strong></p>
 <p>Ultimo item do menu se chama "Importar Dias manualmente"</p>
 <p><a href="https://gifyu.com/image/S6MhX"><img src="https://s6.gifyu.com/images/S6MhX.gif" alt="importarmanualmente" border="0" /></a></p>
