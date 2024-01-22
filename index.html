@@ -73,55 +73,53 @@
                 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            text-align: center;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Estilo comum para os botões/quadrados */
+    .botao {
+      width: 200px;
+      height: 50px;
+      background-color: black;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      margin-bottom: 10px;
+      text-align: center;
+      line-height: 50px;
+    }
 
-        .button, .non-clickable {
-            width: 200px;
-            height: 40px;
-            background-color: black;
-            color: white;
-            border-radius: 10px;
-            margin-bottom: 20px;
-            line-height: 40px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-
-        .button:hover {
-            background-color: red;
-        }
-
-        .non-clickable:hover {
-            background-color: red;
-        }
-    </style>
+    /* Estilo para o efeito hover (passar o mouse por cima) */
+    .botao:hover {
+      background-color: red;
+    }
+  </style>
 </head>
 <body>
 
-    <div class="button" onclick="window.location.href='https://www.youtube.com/watch?v=rY5DgQGizfA&ab_channel=hcode'">
-        Crie pedido de compra
-    </div>
-    <div>&darr;</div>
+  <!-- Botão 1 - Crie pedido de compra -->
+  <button class="botao" onclick="window.location.href='https://www.youtube.com/watch?v=rY5DgQGizfA&ab_channel=hcode'">
+    Crie pedido de compra
+  </button>
+  <p>&#8595;</p>
 
-    <div class="non-clickable">
-        Aguarde aprovação
-    </div>
-    <div>&darr;</div>
+  <!-- Quadrado não clicável 1 - Aguarde aprovação -->
+  <div class="botao">
+    Aguarde aprovação
+  </div>
+  <p>&#8595;</p>
 
-    <div class="non-clickable">
-        Pedido aprovado!
-    </div>
-    <div>&darr;</div>
+  <!-- Quadrado não clicável 2 - Pedido aprovado! -->
+  <div class="botao">
+    Pedido aprovado!
+  </div>
+  <p>&#8595;</p>
 
-    <div class="button" onclick="window.location.href='https://www.youtube.com/watch?v=rY5DgQGizfA&ab_channel=hcode'">
-        Vá em documentos fiscais e lance em notas de serviço como recibo
-    </div>
-    <div>&darr;</div>
+  <!-- Botão 2 - Vá em documentos fiscais e lance em notas de serviço como recibo -->
+  <button class="botao" onclick="window.location.href='https://www.youtube.com/watch?v=rY5DgQGizfA&ab_channel=hcode'">
+    Vá em documentos fiscais e lance em notas de serviço como recibo
+  </button>
 
 </body>
 </html>
@@ -168,5 +166,5 @@
 
 <!--
 MkDocs version : 1.5.3
-Build Date UTC : 2024-01-22 14:33:51.243899+00:00
+Build Date UTC : 2024-01-22 14:35:10.868546+00:00
 -->
