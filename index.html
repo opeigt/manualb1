@@ -71,7 +71,7 @@
             <div class="section" itemprop="articleBody">
               
                 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -79,65 +79,62 @@
         body {
             font-family: Arial, sans-serif;
             margin: 0;
+            padding: 0;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             height: 100vh;
-            background-color: #f4f4f4;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            position: relative;
+        }
+
+        .arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 15px 0 15px 25px;
+            border-color: transparent transparent transparent #007bff;
+            left: -30px;
         }
 
         .button {
             display: inline-block;
             padding: 10px 20px;
-            border: none;
-            border-radius: 10px;
-            background-color: #3498db;
-            color: #ffffff;
             text-align: center;
             text-decoration: none;
-            font-size: 16px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-
-        .button:hover {
-            background-color: #e74c3c;
-        }
-
-        .arrow-box {
-            margin-top: 20px;
-            display: flex;
-            align-items: center;
-        }
-
-        .arrow {
-            width: 0;
-            height: 0;
-            border-style: solid;
-            border-width: 20px 0 20px 30px;
-            border-color: transparent transparent transparent #3498db;
             border-radius: 10px;
-            margin-right: 10px;
+            transition: background-color 0.3s, color 0.3s;
+            margin: 10px;
         }
 
-        .approval-text {
-            padding: 10px;
-            background-color: #3498db;
-            border-radius: 10px;
-            color: #ffffff;
-            font-size: 16px;
+        .purchase-button {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        .purchase-button:hover {
+            background-color: #dc3545;
+        }
+
+        .approval-button {
+            background-color: #007bff;
+            color: #fff;
         }
     </style>
 </head>
 <body>
-    <a class="button" href="https://www.youtube.com/watch?v=gA7IpFiLxdA" target="_blank">
-        Crie um pedido de serviço
-    </a>
-
-    <div class="arrow-box">
+    <div class="container">
         <div class="arrow"></div>
-        <div class="approval-text">Espere aprovação do pedido</div>
+        <a href="https://www.youtube.com/watch?v=gA7IpFiLxdA" class="button purchase-button">Crie um pedido de serviço</a>
+        <p>Abaixo do botão "Pedido de Compra" e acima do botão "Aprovação"</p>
+        <a href="#" class="button approval-button">Espere aprovação do pedido</a>
     </div>
 </body>
 </html>
@@ -184,5 +181,5 @@
 
 <!--
 MkDocs version : 1.5.3
-Build Date UTC : 2024-01-22 13:35:29.496806+00:00
+Build Date UTC : 2024-01-22 13:39:45.679883+00:00
 -->
