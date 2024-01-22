@@ -70,49 +70,69 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <p>E aí, beleza? Chegou no novo manual do B1, que tá tinindo de novo!</p>
-<p>Aqui a ideia é que você ache tudo o que precisa, todas as respostas tão aqui.
-Os tutoriais tão organizadinhos em perguntas, então se quiser achar algo específico, manda um CTRL+F no navegador e digita sua pergunta. Se não achar de primeira, tenta com algumas palavras-chave da frase.</p>
-<p>(<a href="https://www.youtube.com/watch?v=k3VYwRDwQ08">Como lançar conciliador</a>)<br /></p>
-<p>(<a href="https://www.youtube.com/watch?v=Gt8CtqVtv54">como fazer pedido de mercadoria</a>)<br /></p>
-<p>(<a href="https://www.youtube.com/watch?v=j34CMmLHZwY">Como pedir uma nota de transferencia entre lojas</a>)<br /></p>
-<p>(<a href="https://www.youtube.com/watch?v=j34CMmLHZwY">Como fazer uma nota de transferencia entre lojas</a>)<br /></p>
-<p>(<a href="https://www.youtube.com/watch?v=j34CMmLHZwY">Como fazer uma transferencia entre lojas</a>)<br /></p>
-<p>(<a href="https://www.youtube.com/watch?v=j34CMmLHZwY">Como fazer uma nota de venda</a>)<br /></p>
-<p>(<a href="https://www.youtube.com/watch?v=j34CMmLHZwY">Como fazer uma venda entre lojas da IGT</a>)<br /></p>
-<p><svg width="150" height="150">
-  <rect width="120" height="80" rx="10" ry="10" fill="blue" />
-  <text x="50%" y="50%" dy=".35em" text-anchor="middle" fill="white" font-size="16">
-    Vamos começar
-  </text>
-</svg></p>
-<!DOCTYPE html>
+                <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Botão Personalizado</title>
-  <style>
-    /* Adicionando um pouco de estilo para o botão */
-    .custom-button {
-      display: inline-block;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 10px;
-      background-color: blue;
-      color: white;
-      text-align: center;
-      text-decoration: none;
-      font-size: 16px;
-      cursor: pointer;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        #botaoPedido {
+            display: inline-block;
+            padding: 15px 30px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 10px;
+            background-color: #4285f4;
+            color: #ffffff;
+            transition: background-color 0.3s ease;
+        }
+
+        #botaoPedido:hover {
+            background-color: #ff0000;
+        }
+
+        #setaCirculo {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .circulo {
+            width: 50px;
+            height: 50px;
+            background-color: #4285f4;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
+    <a id="botaoPedido" href="https://www.youtube.com/watch?v=gA7IpFiLxdA" target="_blank">
+        Crie um pedido de serviço
+    </a>
 
-<!-- Criando o botão -->
-<a href="https://www.google.com/" class="custom-button">Vamos começar</a>
-
+    <div id="setaCirculo">
+        <div class="circulo">
+            &rarr;
+        </div>
+        <p>Espere aprovação do pedido</p>
+    </div>
 </body>
 </html>
               
@@ -158,5 +178,5 @@ Os tutoriais tão organizadinhos em perguntas, então se quiser achar algo espec
 
 <!--
 MkDocs version : 1.5.3
-Build Date UTC : 2024-01-22 13:24:57.013584+00:00
+Build Date UTC : 2024-01-22 13:29:52.918300+00:00
 -->
