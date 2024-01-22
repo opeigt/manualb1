@@ -94,15 +94,12 @@
 
         /* Estilo padrão do botão azul */
         .botao-azul {
-            background-color: black;
-        }     
-        /*Quadrados*/ 
-        .quadrado-azul {
-        background-color: black;
+            background-color: blue;
         }
+
         /* Estilo do botão vermelho ao passar o mouse */
         .botao-azul:hover {
-            background-color: blue;
+            background-color: red;
         }
 
         /* Estilo para a seta */
@@ -110,24 +107,29 @@
             text-align: center;
             color: #333; /* Cor da seta, pode ser ajustada conforme necessário */
         }
+
+        /* Cor do texto para a seta */
+        .seta, .botao {
+            color: white;
+        }
     </style>
 </head>
 <body>
 
     <!-- Botão 1 -->
-    <a href="https://www.youtube.com/watch?v=rY5DgQGizfA&ab_channel=hcode" class="botao-azul">Crie pedido de compra</a>
+    <a href="https://www.youtube.com/watch?v=rY5DgQGizfA&ab_channel=hcode" class="botao botao-azul" style="background-color: blue; border-radius: 10px;">Crie pedido de compra</a>
 
     <!-- Set (Seta apontando para baixo) -->
     <div class="seta">▼</div>
 
     <!-- Quadrado 1 -->
-    <div class="botao quadrado-azul">Aguarde aprovação</div>
+    <div class="botao botao-azul">Aguarde aprovação</div>
 
     <!-- Set (Seta apontando para baixo) -->
     <div class="seta">▼</div>
 
     <!-- Quadrado 2 -->
-    <div class="botao quadrado-azul">Pedido aprovado!</div>
+    <div class="botao botao-azul">Pedido aprovado!</div>
 
     <!-- Set (Seta apontando para baixo) -->
     <div class="seta">▼</div>
@@ -180,5 +182,5 @@
 
 <!--
 MkDocs version : 1.5.3
-Build Date UTC : 2024-01-22 14:50:04.529761+00:00
+Build Date UTC : 2024-01-22 14:53:37.375609+00:00
 -->
