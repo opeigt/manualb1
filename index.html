@@ -73,53 +73,64 @@
                 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    /* Estilo comum para os botões/quadrados */
-    .botao {
-      width: 200px;
-      height: 50px;
-      background-color: black;
-      color: white;
-      border: none;
-      border-radius: 10px;
-      cursor: pointer;
-      margin-bottom: 10px;
-      text-align: center;
-      line-height: 50px;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Estilos comuns para os botões */
+        .botao {
+            display: block;
+            width: 200px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            margin: 10px auto;
+            text-decoration: none;
+            color: white; /* Cor do texto */
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
 
-    /* Estilo para o efeito hover (passar o mouse por cima) */
-    .botao:hover {
-      background-color: red;
-    }
-  </style>
+        /* Estilo padrão do botão azul */
+        .botao-azul {
+            background-color: blue;
+        }
+
+        /* Estilo do botão vermelho ao passar o mouse */
+        .botao-azul:hover {
+            background-color: red;
+        }
+
+        /* Estilo para a seta */
+        .seta {
+            text-align: center;
+            color: #333; /* Cor da seta, pode ser ajustada conforme necessário */
+        }
+    </style>
 </head>
 <body>
 
-  <!-- Botão 1 - Crie pedido de compra -->
-  <button class="botao" onclick="window.location.href='https://www.youtube.com/watch?v=rY5DgQGizfA&ab_channel=hcode'">
-    Crie pedido de compra
-  </button>
-  <p>&#8595;</p>
+    <!-- Botão 1 -->
+    <a href="https://www.youtube.com/watch?v=rY5DgQGizfA&ab_channel=hcode" class="botao botao-azul" style="background-color: blue; border-radius: 10px;">Crie pedido de compra</a>
 
-  <!-- Quadrado não clicável 1 - Aguarde aprovação -->
-  <div class="botao">
-    Aguarde aprovação
-  </div>
-  <p>&#8595;</p>
+    <!-- Set (Seta apontando para baixo) -->
+    <div class="seta">▼</div>
 
-  <!-- Quadrado não clicável 2 - Pedido aprovado! -->
-  <div class="botao">
-    Pedido aprovado!
-  </div>
-  <p>&#8595;</p>
+    <!-- Quadrado 1 -->
+    <div class="botao botao-azul">Aguarde aprovação</div>
 
-  <!-- Botão 2 - Vá em documentos fiscais e lance em notas de serviço como recibo -->
-  <button class="botao" onclick="window.location.href='https://www.youtube.com/watch?v=rY5DgQGizfA&ab_channel=hcode'">
-    Vá em documentos fiscais e lance em notas de serviço como recibo
-  </button>
+    <!-- Set (Seta apontando para baixo) -->
+    <div class="seta">▼</div>
+
+    <!-- Quadrado 2 -->
+    <div class="botao botao-azul">Pedido aprovado!</div>
+
+    <!-- Set (Seta apontando para baixo) -->
+    <div class="seta">▼</div>
+
+    <!-- Botão 2 -->
+    <a href="https://www.youtube.com/watch?v=rY5DgQGizfA&ab_channel=hcode" class="botao botao-azul">Vá em documentos fiscais e lance em notas de serviço como recibo</a>
 
 </body>
 </html>
@@ -166,5 +177,5 @@
 
 <!--
 MkDocs version : 1.5.3
-Build Date UTC : 2024-01-22 14:35:10.868546+00:00
+Build Date UTC : 2024-01-22 14:36:37.894858+00:00
 -->
