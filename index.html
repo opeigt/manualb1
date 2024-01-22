@@ -76,61 +76,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        /* Estilos comuns para os botões */
-        .botao {
+        /* Estilos para o botão clicável */
+        .botao-clicavel {
             display: block;
             width: 200px;
-            height: 50px;
-            text-align: center;
-            line-height: 50px;
-            margin: 10px auto;
-            text-decoration: none;
-            color: white; /* Cor do texto */
-            border: none;
-            border-radius: 10px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-
-        /* Estilo padrão do botão azul */
-        .botao-azul {
+            height: 40px;
             background-color: blue;
+            color: white;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            text-decoration: none;
         }
 
-        /* Estilo do botão vermelho ao passar o mouse */
-        .botao-azul:hover {
+        .botao-clicavel:hover {
             background-color: red;
         }
 
-        /* Estilo para a seta */
-        .seta {
+        /* Estilos para os quadrados não clicáveis */
+        .quadrado-nao-clicavel {
+            display: block;
+            width: 200px;
+            height: 40px;
+            background-color: black;
+            color: white;
             text-align: center;
-            color: #333; /* Cor da seta, pode ser ajustada conforme necessário */
+            line-height: 40px;
+            border-radius: 10px;
+            margin-bottom: 10px;
         }
     </style>
 </head>
 <body>
 
-    <!-- Botão 1 -->
-    <a href="https://www.youtube.com/watch?v=rY5DgQGizfA&ab_channel=hcode" class="botao botao-azul">Crie pedido de compra</a>
+    <!-- Botão Clicável -->
+    <a class="botao-clicavel" href="https://www.youtube.com/watch?v=rY5DgQGizfA&ab_channel=hcode" target="_blank">Crie pedido de compra</a>
 
-    <!-- Set (Seta apontando para baixo) -->
-    <div class="seta">▼</div>
+    <!-- Quadrado Não Clicável - Aguarde Aprovação -->
+    <div class="quadrado-nao-clicavel">Aguarde aprovação</div>
 
-    <!-- Quadrado 1 -->
-    <div >Aguarde aprovação</div>
+    <!-- Quadrado Não Clicável - Pedido Aprovado -->
+    <div class="quadrado-nao-clicavel">Pedido aprovado!</div>
 
-    <!-- Set (Seta apontando para baixo) -->
-    <div class="seta">▼</div>
-
-    <!-- Quadrado 2 -->
-    <div >Pedido aprovado!</div>
-
-    <!-- Set (Seta apontando para baixo) -->
-    <div class="seta">▼</div>
-
-    <!-- Botão 2 -->
-    <a href="https://www.youtube.com/watch?v=rY5DgQGizfA&ab_channel=hcode" class="botao botao-azul">Vá em documentos fiscais e lance em notas de serviço como recibo</a>
+    <!-- Botão Clicável para Documentos Fiscais -->
+    <a class="botao-clicavel" href="https://www.youtube.com/watch?v=rY5DgQGizfA&ab_channel=hcode" target="_blank">Vá em documentos fiscais e lance em notas de serviço como recibo</a>
 
 </body>
 </html>
@@ -177,5 +167,5 @@
 
 <!--
 MkDocs version : 1.5.3
-Build Date UTC : 2024-01-22 14:20:45.543578+00:00
+Build Date UTC : 2024-01-22 14:27:51.027440+00:00
 -->
