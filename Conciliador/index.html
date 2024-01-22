@@ -70,7 +70,64 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                
+                <p>function onFormSubmit(e) {
+  // Obtém as respostas do formulário
+  var responses = e.values;</p>
+<p>// Substitua 'Sua Chave de API Asana' pela sua chave de API Asana
+  var apiKey = 'Sua Chave de API Asana';</p>
+<p>// Substitua 'ID do Projeto Asana' pelo ID do seu projeto Asana
+  var projectId = 'ID do Projeto Asana';</p>
+<p>// Substitua 'Nome da Tarefa Asana' pelo nome que você deseja dar à tarefa no Asana
+  var taskName = 'Nome da Tarefa Asana';</p>
+<p>// Substitua 'ID da Seção Asana' pelo ID da seção do seu projeto Asana (opcional)
+  var sectionId = 'ID da Seção Asana';</p>
+<p>// Cria a tarefa no Asana
+  var taskId = createAsanaTask(apiKey, projectId, taskName, sectionId);</p>
+<p>// Adiciona um comentário na tarefa do Asana com as respostas do formulário
+  addCommentToAsanaTask(apiKey, taskId, responses);
+}</p>
+<p>function createAsanaTask(apiKey, projectId, taskName, sectionId) {
+  var apiUrl = 'https://app.asana.com/api/1.0/tasks';
+  var headers = {
+    'Authorization': 'Bearer ' + apiKey,
+    'Content-Type': 'application/json',
+  };</p>
+<p>var payload = {
+    data: {
+      projects: [projectId],
+      name: taskName,
+    },
+  };</p>
+<p>if (sectionId) {
+    payload.data.section = sectionId;
+  }</p>
+<p>var options = {
+    method: 'post',
+    headers: headers,
+    payload: JSON.stringify(payload),
+  };</p>
+<p>var response = UrlFetchApp.fetch(apiUrl, options);
+  var responseData = JSON.parse(response.getContentText());</p>
+<p>return responseData.data.id;
+}</p>
+<p>function addCommentToAsanaTask(apiKey, taskId, comments) {
+  var apiUrl = 'https://app.asana.com/api/1.0/tasks/' + taskId + '/stories';
+  var headers = {
+    'Authorization': 'Bearer ' + apiKey,
+    'Content-Type': 'application/json',
+  };</p>
+<p>var payload = {
+    data: {
+      text: 'Respostas do Formulário:\n\n' + comments.join('\n'),
+    },
+  };</p>
+<p>var options = {
+    method: 'post',
+    headers: headers,
+    payload: JSON.stringify(payload),
+  };</p>
+<p>UrlFetchApp.fetch(apiUrl, options);
+}</p>
               
             </div>
           </div><footer>
