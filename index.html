@@ -79,13 +79,13 @@
         /* Estilos comuns para os botões */
         .botao {
             display: block;
-            width: 600px;
+            width: 200px;
             height: 50px;
             text-align: center;
             line-height: 50px;
             margin: 10px auto;
             text-decoration: none;
-            color: white;
+            color: white; /* Cor do texto */
             border: none;
             border-radius: 10px;
             cursor: pointer;
@@ -97,22 +97,37 @@
             background-color: blue;
         }
 
-        /* Estilo do botão vermelho ao passar o mouse */
-        .botao-azul:hover {
+        /* Estilo do botão vermelho ao passar o mouse (removido) */
+        /* .botao-azul:hover {
             background-color: red;
+        } */
+
+        /* Estilo para a seta */
+        .seta {
+            text-align: center;
+            color: #333; /* Cor da seta, pode ser ajustada conforme necessário */
         }
     </style>
 </head>
 <body>
 
     <!-- Botão 1 -->
-    <a href="https://www.youtube.com/watch?v=rY5DgQGizfA&ab_channel=hcode" class="botao botao-azul">Crie pedido de compra</a>
+    <a href="https://www.youtube.com/watch?v=rY5DgQGizfA&ab_channel=hcode" class="botao botao-azul" style="background-color: blue; border-radius: 10px;">Crie pedido de compra</a>
+
+    <!-- Set (Seta apontando para baixo) -->
+    <div class="seta">▼</div>
 
     <!-- Quadrado 1 -->
     <div class="botao botao-azul">Aguarde aprovação</div>
 
+    <!-- Set (Seta apontando para baixo) -->
+    <div class="seta">▼</div>
+
     <!-- Quadrado 2 -->
     <div class="botao botao-azul">Pedido aprovado!</div>
+
+    <!-- Set (Seta apontando para baixo) -->
+    <div class="seta">▼</div>
 
     <!-- Botão 2 -->
     <a href="https://www.youtube.com/watch?v=rY5DgQGizfA&ab_channel=hcode" class="botao botao-azul">Vá em documentos fiscais e lance em notas de serviço como recibo</a>
@@ -162,5 +177,5 @@
 
 <!--
 MkDocs version : 1.5.3
-Build Date UTC : 2024-01-22 14:07:28.529693+00:00
+Build Date UTC : 2024-01-22 14:11:00.430072+00:00
 -->
